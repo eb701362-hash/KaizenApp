@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard KAIZEN - Círculo</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="dashboard.css">
+</head>
+<body>
+    <!-- Partículas de fondo sutiles -->
+    <div class="background-particles">
+        <div class="bg-particle"></div>
+        <div class="bg-particle"></div>
+        <div class="bg-particle"></div>
+        <div class="bg-particle"></div>
+        <div class="bg-particle"></div>
+        <div class="bg-particle"></div>
+        <div class="bg-particle"></div>
+        <div class="bg-particle"></div>
+        <div class="bg-particle"></div>
+
+    </div>
+ 
+
+
+    <!-- Círculo con ondas - ELEMENTO PRINCIPAL -->
+    <div class="wave-circle-container">
+        <div class="wave-circle" id="waveCircle" onclick="handleCircleClick()">
+            <div class="wave"></div>
+            <div class="wave"></div>
+            <div class="wave"></div>
+        
+            <div class="circle-icon">
+                <i class="fas fa-rocket"></i>
+            </div>
+        </div>
+    </div>
+ 
+    <h2 class="click">HAZ CLIC EN EL CIRCULO</h2>
+
+
+
+    <!-- Overlay de transición -->
+    <div class="transition-overlay" id="transitionOverlay">
+        <div class="transition-content">
+            <div style="font-size: 4rem; margin-bottom: 30px;">¡Bienvenido!</div>
+            <div>Navegando a nueva experiencia...</div>
+            <div style="font-size: 1.2rem; margin-top: 15px; opacity: 0.8;">¿Estás listo? ¡Vamos allá!</div>
+        </div>
+    </div>
+<script src="dashboard.js"></script>
+</body>
+</html>

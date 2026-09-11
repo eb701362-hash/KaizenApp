@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+
+  <meta charset="UTF-8" />
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+
+  <title>Nivel 1 - KAIZEN</title>
+
+  <link
+    rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap">
+
+  <link
+    rel="stylesheet"
+    href="nivel1.css">
+
+  <link
+    rel="shortcut icon"
+    href="logonuevo.jpeg">
+
+</head>
+
+<body>
+
+  <!-- MÚSICA -->
+  <audio
+    id="bg-music"
+    src="/audio/fondo.mp3"
+    autoplay
+    loop>
+  </audio>
+
+  <!-- ESCENA -->
+  <div class="scene">
+
+    <!-- FONDO -->
+    <div class="scene-bg"></div>
+
+    <!-- NIEBLA -->
+    <div class="fog-layer">
+
+      <div class="fog"></div>
+
+    </div>
+
+    <!-- CONTENIDO -->
+    <div class="content-layer">
+
+      <!-- ==========================
+           TARJETA DEL NIVEL
+      ========================== -->
+
+      <div
+        class="card"
+        id="exerciseCard">
+
+        <div class="card-inner">
+
+          <!-- HEADER -->
+          <div class="card-header">
+
+            <div>
+
+              <div class="pill">
+
+                <span class="pill-dot"></span>
+
+                NIVEL 1 · LENGUA DE SEÑAS
+
+              </div>
+
+              <div class="nivel-title">
+                ¿Cuál es la seña correcta?
+              </div>
+
+              <div class="sub">
+                Observa la seña y elige la opción correcta.
+              </div>
+
+            </div>
+
+            <div class="xp-info">
+
+              XP: +20 · Gemas: +3
+
+            </div>
+
+          </div>
+
+          <!-- ==========================
+               PROGRESO
+          ========================== -->
+
+          <div class="progress-container">
+
+            <div
+              class="progress-bar"
+              id="progressBar">
+            </div>
+
+          </div>
+
+          <div
+            class="progress-text"
+            id="progressText">
+
+            Ejercicio 1 de 4
+
+          </div>
+
+          <!-- ==========================
+               IMAGEN
+          ========================== -->
+
+          <div class="exercise-image">
+
+            <span>
+
+              <img
+                id="exerciseImg"
+                src="letraa.jpeg"
+                alt="Ejercicio">
+
+            </span>
+
+          </div>
+
+          <!-- ==========================
+               PREGUNTA
+          ========================== -->
+
+          <div class="question">
+
+            <div class="question-label">
+
+              Pregunta
+
+            </div>
+
+            <div
+              class="question-text"
+              id="questionText">
+
+              Selecciona la opción correcta.
+
+            </div>
+
+          </div>
+
+          <!-- ==========================
+               OPCIONES
+          ========================== -->
+
+          <div class="options">
+
+            <!-- OPCIÓN 1 -->
+            <button
+              class="option-btn"
+              data-option="1">
+
+              <div>
+
+                <div class="option-label">
+                  Opción 1
+                </div>
+
+                <div
+                  class="option-main"
+                  id="option1">
+                </div>
+
+              </div>
+
+              <div class="option-check">
+                ✓
+              </div>
+
+            </button>
+
+            <!-- OPCIÓN 2 -->
+            <button
+              class="option-btn"
+              data-option="2">
+
+              <div>
+
+                <div class="option-label">
+                  Opción 2
+                </div>
+
+                <div
+                  class="option-main"
+                  id="option2">
+                </div>
+
+              </div>
+
+              <div class="option-check">
+                ✓
+              </div>
+
+            </button>
+
+            <!-- OPCIÓN 3 -->
+            <button
+              class="option-btn"
+              data-option="3">
+
+              <div>
+
+                <div class="option-label">
+                  Opción 3
+                </div>
+
+                <div
+                  class="option-main"
+                  id="option3">
+                </div>
+
+              </div>
+
+              <div class="option-check">
+                ✓
+              </div>
+
+            </button>
+
+            <!-- OPCIÓN 4 -->
+            <button
+              class="option-btn"
+              data-option="4">
+
+              <div>
+
+                <div class="option-label">
+                  Opción 4
+                </div>
+
+                <div
+                  class="option-main"
+                  id="option4">
+                </div>
+
+              </div>
+
+              <div class="option-check">
+                ✓
+              </div>
+
+            </button>
+
+          </div>
+
+          <!-- BOTÓN FINAL -->
+          <button
+            id="finishBtn"
+            class="finish-btn">
+
+            Terminar nivel
+
+          </button>
+
+        </div>
+
+      </div>
+
+      <!-- ==========================
+           BRUJITA
+      ========================== -->
+
+      <aside
+        class="witch-panel"
+        id="witchPanel">
+
+        <!-- IMAGEN -->
+        <div class="witch-illustration">
+
+          <img
+            src="bruja1.png"
+            alt="Kaia">
+
+          <div class="witch-glow"></div>
+
+        </div>
+
+        <!-- DIÁLOGOS -->
+        <div
+          class="dialog-box"
+          id="dialogBox">
+
+          <div class="dialog-inner">
+
+            <div class="dialog-name">
+
+              Sir Aldric, protector y guardian de las runas antiguas
+
+            </div>
+
+            <div
+              class="dialog-text"
+              id="dialogText">
+
+Bienvenido aprendiz, este es tu primer paso en el pueblo de las señas
+            </div>
+
+            <button
+              class="dialog-next-btn"
+              id="dialogNextBtn">
+
+              <span>▶</span>
+
+              Continuar
+
+            </button>
+
+          </div>
+
+        </div>
+
+      </aside>
+
+    </div>
+
+  </div>
+
+  <!-- JS -->
+  <script src="nivel1.js"></script>
+
+  <!-- AUDIOS -->
+<audio id="kaia-voice" src="bruja1.mp3" muted></audio>
+
+<audio id="kaia-voice-2" src="bruja1frase2.mp3"></audio>
+
+<audio id="kaia-voice-3" src="bruja1frase3.mp3"></audio>
+
+<audio id="kaia-voice-4" src="bruja1frase4.mp3"></audio>
+
+<audio id="kaia-voice-5" src="bruja1frase5.mp3"></audio>
+
+<audio id="kaia-voice-6" src="bruja1frase6.mp3"></audio>
+
+<audio id="kaia-voice-7" src="bruja1frase7.mp3"></audio>
+</body>
+</html>

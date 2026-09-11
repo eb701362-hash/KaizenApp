@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KAIZEN - Contacto</title>
+    <link rel="stylesheet" href="contacto.css">
+</head>
+
+<body>
+    <header class="header">
+        <div class="header-content">
+            <div class="logo-container">
+                <!-- OPCIÓN 1: Con etiqueta IMG (recomendado) -->
+                <div class="logo-teresias">
+                    <img src="logonuevo.jpeg" alt="Teresias Logo">
+                </div>
+                <h1 class="logo-title">Kaizen</h1>
+            </div>
+            <nav>
+                <ul class="nav-container">
+                    <li class="nav-item">
+                        <a href="info.html" class="nav-button">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="quienes.html" class="nav-button">Quiénes Somos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="contacto.html" class="nav-button">Contacto</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="niveles.html" class="nav-button">Niveles</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="perfil.html" class="nav-button">Perfil</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <!-- ===== SEÑAS FLOTANTES ===== -->
+    <div class="floating-signs">
+        <div class="sign-float"><span class="sign-emoji">👋</span><span class="sign-label">Hola</span></div>
+        <div class="sign-float"><span class="sign-emoji">🤟</span><span class="sign-label">Te Amo</span></div>
+        <div class="sign-float"><span class="sign-emoji">🙏</span><span class="sign-label">Gracias</span></div>
+        <div class="sign-float"><span class="sign-emoji">👍</span><span class="sign-label">Bien</span></div>
+        <div class="sign-float"><span class="sign-emoji">✌️</span><span class="sign-label">Paz</span></div>
+        <div class="sign-float"><span class="sign-emoji">🤝</span><span class="sign-label">Juntos</span></div>
+    </div>
+
+    <!-- ===== HERO ===== -->
+    <div class="contact-hero">
+        <div class="hero-badge-contact">📡 Estamos aquí para ayudarte</div>
+        <h1 class="contact-hero-title">Contáctanos</h1>
+        <p class="contact-hero-sub">¿Tienes dudas, sugerencias o quieres saber más sobre KAIZEN? ¡Escríbenos!</p>
+    </div>
+
+    <!-- ===== CONTENIDO PRINCIPAL ===== -->
+    <div class="contact-main">
+
+        <!-- BOTÓN ASESOR -->
+        <div class="advisor-section">
+            <button class="advisor-btn" onclick="openAdvisor()">
+                <span class="advisor-btn-icon">🎧</span>
+                Contactar con un Asesor
+            </button>
+            <p class="advisor-subtitle">Un especialista KAIZEN te atenderá en menos de 24 horas</p>
+        </div>
+
+        <!-- REDES SOCIALES CON ICONOS SVG DE ICON-ICONS -->
+        <div class="social-section">
+
+            <!-- FACEBOOK -->
+            <a href="https://www.facebook.com/share/1FxtbhvAzk/" target="_blank" class="social-card facebook">
+                <div class="social-icon-wrap">
+                    <!-- Icono Facebook estilo icon-icons -->
+                    <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <rect width="48" height="48" rx="12" fill="#1877F2" />
+                        <path
+                            d="M33 24C33 19.029 28.971 15 24 15C19.029 15 15 19.029 15 24C15 28.503 18.291 32.245 22.594 32.891V26.719H20.309V24H22.594V21.994C22.594 19.738 23.932 18.5 25.988 18.5C26.973 18.5 28.003 18.676 28.003 18.676V20.891H26.869C25.751 20.891 25.406 21.578 25.406 22.283V24H27.898L27.502 26.719H25.406V32.891C29.709 32.245 33 28.503 33 24Z"
+                            fill="white" />
+                    </svg>
+                </div>
+                <span class="social-name">Facebook</span>
+                <span class="social-handle">KaizenApp</span>
+            </a>
+
+            <!-- WHATSAPP -->
+            <a href="https://wa.me/528132325048" target="_blank" class="social-card whatsapp">
+                <div class="social-icon-wrap">
+                    <!-- Icono WhatsApp estilo icon-icons -->
+                    <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <rect width="48" height="48" rx="12" fill="#25D366" />
+                        <path fill-rule="evenodd" clip-rule="evenodd"
+                            d="M24 13C18.477 13 14 17.477 14 23C14 24.89 14.525 26.655 15.438 28.162L13.5 35L20.52 33.094C21.977 33.9 23.434 34.5 25 34.5C30.523 34.5 35 30.023 35 24.5C35 18.977 30.523 13 24 13ZM20.5 20.5C20.5 20.5 21 19.5 21.5 19.5C22 19.5 22.5 20 22.5 20.5L23.5 22.5C23.5 22.5 23.5 23 23 23.5C22.5 24 22 24.5 22.5 25C23 25.5 24.5 27 26 27.5C27 27.833 27.5 27.5 28 27C28.5 26.5 29 26 29 26C29 26 29.5 26 30 26.5L31 27.5C31.5 28 31.5 28.5 31 29C30.5 29.5 29.5 30.5 28.5 30.5C27.5 30.5 25 30 22.5 27.5C20 25 19.5 22.5 19.5 21.5C19.5 20.5 20.5 20.5 20.5 20.5Z"
+                            fill="white" />
+                    </svg>
+                </div>
+                <span class="social-name">WhatsApp</span>
+                <span class="social-handle">+52 813 232 5048</span>
+            </a>
+
+            <!-- GMAIL -->
+            <a href="mailto:contacto@kaizen.com" class="social-card gmail">
+                <div class="social-icon-wrap">
+                    <!-- Icono Gmail estilo icon-icons -->
+                    <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <rect width="48" height="48" rx="12" fill="#ffffff" />
+                        <path
+                            d="M13 16H35C36.105 16 37 16.895 37 18V30C37 31.105 36.105 32 35 32H13C11.895 32 11 31.105 11 30V18C11 16.895 11.895 16 13 16Z"
+                            fill="white" stroke="#E0E0E0" stroke-width="1" />
+                        <path d="M11 18L24 26L37 18" stroke="#EA4335" stroke-width="2.5" stroke-linecap="round" />
+                        <path d="M11 18V30C11 31.105 11.895 32 13 32H35C36.105 32 37 31.105 37 30V18L24 26L11 18Z"
+                            fill="#FAFAFA" />
+                        <path d="M11 18L24 26L37 18" stroke="#EA4335" stroke-width="2.5" stroke-linecap="round" />
+                        <path d="M13 16L24 24L35 16" fill="#EA4335" />
+                        <path d="M11 30L19 23" stroke="#C5221F" stroke-width="1.5" stroke-linecap="round" />
+                        <path d="M37 30L29 23" stroke="#C5221F" stroke-width="1.5" stroke-linecap="round" />
+                    </svg>
+                </div>
+                <span class="social-name">Gmail</span>
+                <span class="social-handle">equipokaizen01@gmail.com
+                </span>
+            </a>
+
+        </div>
+
+        <!-- GRID: FORMULARIO + INFO -->
+        <div class="contact-grid">
+
+            <!-- FORMULARIO -->
+            <div class="form-container">
+                <h2 class="form-title">📋 Solicitar Información</h2>
+                <form id="contactForm" onsubmit="sendForm(event)">
+
+    <div class="form-row">
+
+        <div class="form-group">
+            <label class="form-label">Nombre</label>
+            <input
+                type="text"
+                name="nombre"
+                class="form-input"
+                placeholder="Tu nombre"
+                required>
+        </div>
+
+        <div class="form-group">
+            <label class="form-label">Apellido</label>
+            <input
+                type="text"
+                name="apellido"
+                class="form-input"
+                placeholder="Tu apellido"
+                required>
+        </div>
+
+    </div>
+
+    <div class="form-group">
+        <label class="form-label">Correo Electrónico</label>
+        <input
+            type="email"
+            name="correo"
+            class="form-input"
+            placeholder="tucorreo@email.com"
+            required>
+    </div>
+
+    <div class="form-group">
+        <label class="form-label">Teléfono</label>
+        <input
+            type="tel"
+            name="telefono"
+            class="form-input"
+            placeholder="Tu número de teléfono">
+    </div>
+
+    <div class="form-group">
+        <label class="form-label">Asunto</label>
+        <select
+            name="asunto"
+            class="form-select"
+            required>
+
+            <option value="">Selecciona un asunto...</option>
+            <option value="info">Información general</option>
+            <option value="niveles">Niveles y cursos</option>
+            <option value="precios">Precios y planes</option>
+            <option value="tecnico">Soporte técnico</option>
+            <option value="otro">Otro</option>
+
+        </select>
+    </div>
+
+    <div class="form-group">
+        <label class="form-label">Mensaje</label>
+
+        <textarea
+            name="mensaje"
+            class="form-textarea"
+            placeholder="Escribe tu mensaje aquí..."
+            required></textarea>
+    </div>
+
+    <button type="submit" class="submit-btn">
+        ✉️ Enviar Mensaje
+    </button>
+
+</form>
+            </div>
+
+            <!-- INFO CARDS -->
+            <div class="info-container">
+                <div class="info-card">
+                    <div class="info-icon-wrap purple">📞</div>
+                    <div class="info-text">
+                        <h3>Teléfono</h3>
+                        <p>813 232 5048</p>
+                        <span>Llamadas y WhatsApp</span>
+                    </div>
+                </div>
+                <div class="info-card">
+                    <div class="info-icon-wrap cyan">📧</div>
+                    <div class="info-text">
+                        <h3>Correo Electrónico</h3>
+                        <p>equipokaizen01@gmail.com</p>
+                        <span>Respuesta en menos de 24h</span>
+                    </div>
+                </div>
+                <div class="info-card">
+                    <div class="info-icon-wrap pink">📍</div>
+                    <div class="info-text">
+                        <h3>Ubicación</h3>
+                        <p>México</p>
+                        <span>Atención en todo el país</span>
+                    </div>
+                </div>
+                <div class="info-card">
+                    <div class="info-icon-wrap green">🕐</div>
+                    <div class="info-text">
+                        <h3>Horario de Atención</h3>
+                        <p>Lunes a Viernes</p>
+                        <span>8:00 AM – 4:00 PM</span>
+                    </div>
+                </div>
+            </div>
+            <div class="map-container">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3762.661!2d-99.1332!3d19.4326!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMTnCsDI1JzU3LjQiTiA5OcKwMDcnNTkuNSJX!5e0!3m2!1ses!2smx!4v1234567890"
+                    width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade">
+                </iframe>
+            </div>
+
+
+        </div>
+
+        <!-- HORARIO BANNER -->
+        <div class="schedule-banner">
+            <h3 class="schedule-title">🕐 Horario de Atención de Oficina</h3>
+            <div class="schedule-grid">
+                <div class="schedule-item">
+                    <span class="schedule-icon">📅</span>
+                    <span class="schedule-day">Días</span>
+                    <span class="schedule-time">Lun – Vie</span>
+                </div>
+                <div class="schedule-divider"></div>
+                <div class="schedule-item">
+                    <span class="schedule-icon">🌅</span>
+                    <span class="schedule-day">Apertura</span>
+                    <span class="schedule-time">8:00 AM</span>
+                </div>
+                <div class="schedule-divider"></div>
+                <div class="schedule-item">
+                    <span class="schedule-icon">🌇</span>
+                    <span class="schedule-day">Cierre</span>
+                    <span class="schedule-time">4:00 PM</span>
+                </div>
+                <div class="schedule-divider"></div>
+                <div class="schedule-item">
+                    <span class="schedule-icon">📵</span>
+                    <span class="schedule-day">Fines de semana</span>
+                    <span class="schedule-time">Cerrado</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- TELÉFONO BANNER -->
+        <div class="phone-banner">
+            <p class="phone-label">📢 Para Mayor Información Comuníquese Al</p>
+            <div class="phone-number">813 232 5048</div>
+            <p class="phone-sub">Nuestros asesores están listos para atenderte</p>
+            <a href="tel:8132325048" class="phone-call-btn">📞 Llamar Ahora</a>
+        </div>
+
+    </div>
+
+    <!-- TOAST -->
+    <div class="toast" id="toast">
+        <span>✅</span> ¡Mensaje enviado con éxito! Te contactaremos pronto.
+    </div>
+
+
+    <script src="contacto.js"></script>
+</body>
+
+</html>
