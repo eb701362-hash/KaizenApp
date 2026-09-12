@@ -497,7 +497,7 @@ function openLesson(unitId, idx) {
 
     const levelNumber = (unitId - 1) * 8 + (idx + 1);
 
-    window.location.href = "/html/nivel" + levelNumber + ".html?unit=" + unitId + "&level=" + (idx + 1);
+    window.location.href = "nivel" + levelNumber + ".html?unit=" + unitId + "&level=" + (idx + 1);
 }
 
 
