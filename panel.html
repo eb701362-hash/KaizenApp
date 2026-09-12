@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KAIZEN - Promoción Especial</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="panel.css">
+</head>
+<body>
+
+    <!-- Partículas de fondo -->
+    <div class="particles">
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+    </div>
+
+    <!-- Modal de promoción -->
+    <div class="modal-overlay" id="promoModal">
+        <div class="promo-modal">
+            <button class="close-btn" onclick="closeModal()">
+                <i class="fas fa-times"></i>
+            </button>
+
+            <div class="promo-header">
+                <div class="promo-badge">
+                    <i class="fas fa-star"></i> Nueva Experiencia
+                </div>
+                <h1 class="promo-title">KAIZEN</h1>
+                <p class="promo-subtitle">
+                    Una nueva oferta para ti. <span class="highlight">por tiempo limitado</span>.
+                    <span class="accent">está disponible</span> para ti
+                </p>
+            </div>
+
+            <div class="promo-content">
+                <p class="promo-description">
+                    KAIZEN es una nueva aventura digital que pondrá a prueba tus habilidades,
+                    te presentará nuevas funcionalidades y te brindará una experiencia increíble
+                    que cambiará la forma en que trabajas.
+                </p>
+
+                <div class="countdown-section">
+                    <div class="countdown-icon">
+                        <i class="fas fa-hourglass-half"></i>
+                    </div>
+                    <div class="countdown-label">Tiempo restante para esta oferta</div>
+                    <div class="countdown-timer">
+                        <div class="time-unit">
+                            <span class="time-number" id="hours">03</span>
+                            <span class="time-label">HORAS</span>
+                        </div>
+                        <div class="time-unit">
+                            <span class="time-number" id="minutes">18</span>
+                            <span class="time-label">MIN</span>
+                        </div>
+                        <div class="time-unit">
+                            <span class="time-number" id="seconds">24</span>
+                            <span class="time-label">SEG</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bonus-section">
+                    <div class="bonus-icon">
+                        <i class="fas fa-gift"></i>
+                    </div>
+                    <h3 class="bonus-title">Bonus para usuarios de KAIZEN</h3>
+                    <p class="bonus-description">
+                        Necesitarás tu <span class="bonus-code">código personal de KAIZEN</span>
+                        para reconectar con todas las funciones durante esta nueva aventura.
+                    </p>
+                </div>
+
+                <div class="action-buttons">
+                    <button class="btn btn-primary" onclick="acceptOffer()">
+                        <i class="fas fa-rocket"></i>
+                        ¡Comenzar Ahora!
+                    </button>
+                    <button class="btn btn-secondary" onclick="learnMore()">
+                        <i class="fas fa-info-circle"></i>
+                        Más Información
+                    </button>
+                </div>
+            </div>
+
+            <div class="scroll-indicator" id="scrollIndicator">
+                <i class="fas fa-chevron-down"></i>
+                Desliza para ver más
+            </div>
+        </div>
+    </div>
+
+    <!-- PANTALLA DE PLANES -->
+    <div class="screen" id="plansScreen" style="display:none;">
+
+        <div class="kaizen-header">
+            <img src="logonuevo.jpeg" class="kaizen-logo" alt="KAIZEN">
+            <div class="header-buttons">
+                <button class="login-btn" onclick="window.location.href='info.html'">
+                    <i class="fas fa-sign-in-alt"></i> Iniciar sesión
+                </button>
+                <button class="skip-btn" onclick="skipExperience()">SKIP</button>
+            </div>
+        </div>
+
+        <div class="plans-wrapper">
+            <div class="plans-container">
+
+                <h2 class="plans-title">Elige tu experiencia KAIZEN</h2>
+                <p class="plans-subtitle">Planes diseñados para cada etapa de tu aprendizaje.</p>
+
+                <div class="plans-grid">
+
+                    <!-- BÁSICO -->
+                    <div class="plan-card basic">
+                        <div class="plan-icon-wrap">
+                            <span class="plan-icon">🌱</span>
+                        </div>
+                        <div class="plan-name">Básico</div>
+                        <div class="plan-price">$99 <span>MXN</span></div>
+                        <div class="plan-period">por mes</div>
+                        <div class="plan-divider"></div>
+                        <ul class="plan-features">
+                            <li class="plan-feature">
+                                <i class="fas fa-check-circle"></i> Acceso esencial a lecciones
+                            </li>
+                            <li class="plan-feature">
+                                <i class="fas fa-check-circle"></i> Progreso guardado
+                            </li>
+                            <li class="plan-feature">
+                                <i class="fas fa-check-circle"></i> 5 vidas por día
+                            </li>
+                            <li class="plan-feature">
+                                <i class="fas fa-check-circle"></i> Abecedario y números
+                            </li>
+                        </ul>
+                        <button class="plan-cta">Empezar gratis</button>
+                    </div>
+
+                    <!-- ESTÁNDAR -->
+                    <div class="plan-card standard">
+                        <div class="plan-badge">⭐ Más Popular</div>
+                        <div class="plan-icon-wrap">
+                            <span class="plan-icon">🚀</span>
+                        </div>
+                        <div class="plan-name">Estándar</div>
+                        <div class="plan-price">$149 <span>MXN</span></div>
+                        <div class="plan-period">por mes</div>
+                        <div class="plan-divider"></div>
+                        <ul class="plan-features">
+                            <li class="plan-feature">
+                                <i class="fas fa-check-circle"></i> Todo lo de Básico
+                            </li>
+                            <li class="plan-feature">
+                                <i class="fas fa-check-circle"></i> Rutas guiadas de aprendizaje
+                            </li>
+                            <li class="plan-feature">
+                                <i class="fas fa-check-circle"></i> Vidas ilimitadas
+                            </li>
+                            <li class="plan-feature">
+                                <i class="fas fa-check-circle"></i> Todas las unidades desbloqueadas
+                            </li>
+                        </ul>
+                        <button class="plan-cta">Elegir Estándar</button>
+                    </div>
+
+                    <!-- PREMIUM -->
+                    <div class="plan-card premium">
+                        <div class="plan-icon-wrap">
+                            <span class="plan-icon">👑</span>
+                        </div>
+                        <div class="plan-name">Premium</div>
+                        <div class="plan-price">$199 <span>MXN</span></div>
+                        <div class="plan-period">por mes</div>
+                        <div class="plan-divider"></div>
+                        <ul class="plan-features">
+                            <li class="plan-feature">
+                                <i class="fas fa-check-circle"></i> Todo lo de Estándar
+                            </li>
+                            <li class="plan-feature">
+                                <i class="fas fa-check-circle"></i> Contenido exclusivo LSM
+                            </li>
+                            <li class="plan-feature">
+                                <i class="fas fa-check-circle"></i> Tutor IA personalizado
+                            </li>
+                            <li class="plan-feature">
+                                <i class="fas fa-check-circle"></i> Certificado de progreso
+                            </li>
+                        </ul>
+                        <button class="plan-cta">Ir Premium</button>
+                    </div>
+
+                </div>
+
+                <button class="btn-back" onclick="goBackToModal()">
+                    <i class="fas fa-arrow-left"></i> Volver
+                </button>
+
+            </div>
+        </div>
+
+    </div>
+
+    <!-- PANTALLA DE INFO -->
+    <div class="screen" id="infoScreen" style="display:none;">
+        <div class="info-container">
+            <h2 class="info-title">Más Información</h2>
+            <p class="info-text">
+                Esta nueva experiencia KAIZEN te permitirá desbloquear funciones avanzadas,
+                rutas personalizadas y contenido exclusivo diseñado para tu crecimiento.
+            </p>
+            <ul class="info-list">
+                <li>Rutas guiadas según tu nivel</li>
+                <li>Retos progresivos</li>
+                <li>Contenido exclusivo</li>
+                <li>Bonos especiales</li>
+            </ul>
+            <button class="btn-back" onclick="goBackToModal()">
+                <i class="fas fa-arrow-left"></i> Volver
+            </button>
+        </div>
+    </div>
+
+    <script src="panel.js"></script>
+</body>
+</html>
