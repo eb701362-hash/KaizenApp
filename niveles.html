@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KAIZEN - Niveles</title>
+    <link rel="stylesheet" href="niveles.css">
+</head>
+<body>
+    <header class="header">
+        <div class="header-content">
+            <div class="logo-container">
+                <div class="logo-teresias">
+                    <img src="logonuevo.jpeg" alt="Logo KAIZEN">
+                </div>
+                <h1 class="logo-title">Kaizen</h1>
+            </div>
+            <nav>
+                <ul class="nav-container">
+                    <li><a href="info.html" class="nav-button">Inicio</a></li>
+                    <li><a href="quienes.html" class="nav-button">Quiénes Somos</a></li>
+                    <li><a href="contacto.html" class="nav-button">Contacto</a></li>
+                    <li><a href="niveles.html" class="nav-button">Niveles</a></li>
+                    <li><a href="perfil.html" class="nav-button">Perfil</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <div class="stats-bar">
+        <div class="stat-item streak">
+            <span class="stat-icon">🔥</span>
+            <div class="stat-info">
+                <span class="stat-value" id="stat-streak">0</span>
+                <span class="stat-label">Racha</span>
+            </div>
+        </div>
+        <div class="stat-item gems">
+            <span class="stat-icon">💎</span>
+            <div class="stat-info">
+                <span class="stat-value" id="stat-gems">0</span>
+                <span class="stat-label">Gemas</span>
+            </div>
+        </div>
+        <div class="lives-display">
+            <span class="lives-heart-icon">❤️</span>
+            <div class="lives-info">
+                <span class="lives-count" id="stat-lives">x5</span>
+                <span class="lives-label">Vidas</span>
+            </div>
+        </div>
+        <div class="stat-item xp">
+            <span class="stat-icon">⚡</span>
+            <div class="stat-info">
+                <span class="stat-value" id="stat-xp">0 XP</span>
+                <span class="stat-label">Experiencia</span>
+            </div>
+        </div>
+    </div>
+
+    <div class="main-layout">
+        <aside class="sidebar">
+            <div class="side-card">
+                <div class="unit-badge">Unidad 1</div>
+                <h3>Comunicación Básica</h3>
+                <p>Aprende el abecedario, números y saludos básicos en LSM.</p>
+                <div class="progress-bar-wrap">
+                    <div class="progress-bar-fill" id="side-progress"></div>
+                </div>
+                <div class="progress-text" id="side-progress-text">0 de 8 lecciones completadas</div>
+            </div>
+
+            <div class="side-card ranking">
+                <div class="ranking-title">🏆 Ranking</div>
+                <div class="rank-item">
+                    <span class="rank-num g">1</span>
+                    <div class="rank-avatar">👑</div>
+                    <span class="rank-name">María G.</span>
+                    <span class="rank-xp">980 XP</span>
+                </div>
+                <div class="rank-item">
+                    <span class="rank-num s">2</span>
+                    <div class="rank-avatar">🌟</div>
+                    <span class="rank-name">Carlos R.</span>
+                    <span class="rank-xp">745 XP</span>
+                </div>
+                <div class="rank-item">
+                    <span class="rank-num b">3</span>
+                    <div class="rank-avatar">🎯</div>
+                    <span class="rank-name">Ana P.</span>
+                    <span class="rank-xp">620 XP</span>
+                </div>
+                <div class="rank-item">
+                    <span class="rank-num">4</span>
+                    <div class="rank-avatar" style="background:linear-gradient(45deg,#00F5FF,#3B82F6)">😊</div>
+                    <span class="rank-name">Tú</span>
+                    <span class="rank-xp" id="rank-my-xp">0 XP</span>
+                </div>
+                <div class="rank-item">
+                    <span class="rank-num">5</span>
+                    <div class="rank-avatar" style="background:linear-gradient(45deg,#EC4899,#8B5CF6)">🎮</div>
+                    <span class="rank-name">Luis M.</span>
+                    <span class="rank-xp">95 XP</span>
+                </div>
+            </div>
+        </aside>
+
+        <div class="path-wrapper">
+
+            <!-- UNIDAD 1 -->
+            <div class="unit-header active-unit" id="unit1-header">
+                <span class="unit-icon">🤟</span>
+                <div class="unit-info">
+                    <h2>Unidad 1</h2>
+                    <h3>Comunicación Básica en LSM</h3>
+                    <p>Aprende los fundamentos del lenguaje de señas mexicano.</p>
+                </div>
+                <div class="unit-status status-active" id="unit1-status">En progreso</div>
+                <button class="guide-btn">📖 Guía</button>
+            </div>
+            <div class="s-path" id="u1-path">
+                <svg class="path-svg" id="u1-svg"></svg>
+            </div>
+
+            <!-- UNIDAD 2 -->
+            <div class="unit-header unlocked-unit" id="unit2-header">
+                <span class="unit-icon">🗣️</span>
+                <div class="unit-info">
+                    <h2>Unidad 2</h2>
+                    <h3>Conversación Intermedia</h3>
+                    <p>Construye frases y diálogos básicos en LSM.</p>
+                </div>
+                <div class="unit-status status-locked" id="unit2-status">Bloqueada</div>
+                <button class="guide-btn">📖 Guía</button>
+            </div>
+            <div class="s-path" id="u2-path">
+                <svg class="path-svg" id="u2-svg"></svg>
+            </div>
+
+            <!-- UNIDAD 3 -->
+            <div class="unit-header unlocked-unit" id="unit3-header">
+                <span class="unit-icon">🚀</span>
+                <div class="unit-info">
+                    <h2>Unidad 3</h2>
+                    <h3>Expresión Avanzada</h3>
+                    <p>Expresa ideas complejas y emociones en LSM.</p>
+                </div>
+                <div class="unit-status status-locked" id="unit3-status">Bloqueada</div>
+                <button class="guide-btn">📖 Guía</button>
+            </div>
+            <div class="s-path" id="u3-path">
+                <svg class="path-svg" id="u3-svg"></svg>
+            </div>
+        </div>
+    </div>
+
+    <!-- OVERLAY DESBLOQUEO -->
+    <div class="unlock-overlay" id="unlock-overlay">
+        <div class="unlock-lock" id="unlock-lock">🔒</div>
+        <div class="unlock-text" id="unlock-text">¡Desbloqueado!</div>
+        <div class="unlock-subtext" id="unlock-subtext">Nueva lección disponible</div>
+    </div>
+
+    <div class="completion-squares" id="completion-squares"></div>
+    <div class="confetti-container" id="confetti-container"></div>
+
+    <div class="complete-screen" id="complete-screen">
+        <div class="complete-trophy">🏆</div>
+        <div class="complete-title" id="complete-title">¡Lección Completada!</div>
+        <div class="complete-subtitle" id="complete-subtitle">¡Excelente trabajo! Sigue así.</div>
+        <div class="complete-stats">
+            <div class="complete-stat">
+                <div class="complete-stat-val" id="cs-xp">+20 XP</div>
+                <div class="complete-stat-lbl">Experiencia</div>
+            </div>
+            <div class="complete-stat">
+                <div class="complete-stat-val" id="cs-gems">+5 💎</div>
+                <div class="complete-stat-lbl">Gemas</div>
+            </div>
+            <div class="complete-stat">
+                <div class="complete-stat-val" id="cs-lives">❤️ x5</div>
+                <div class="complete-stat-lbl">Vidas</div>
+            </div>
+        </div>
+        <button class="complete-btn" id="complete-btn" onclick="continueAfterComplete()">Continuar →</button>
+    </div>
+
+    <!-- MODAL LECCIÓN -->
+    <div class="lesson-modal" id="lesson-modal">
+        <div class="lesson-modal-box">
+            <button class="modal-close" onclick="closeModal()">✕</button>
+            <div class="modal-icon" id="modal-icon">🤟</div>
+            <div class="modal-title" id="modal-title">Abecedario</div>
+            <div class="modal-desc" id="modal-desc">Aprende las 27 letras del alfabeto en señas mexicanas.</div>
+            <div class="modal-lives" id="modal-lives"></div>
+            <button class="modal-btn" id="modal-start-btn">¡Comenzar ejercicio!</button>
+        </div>
+    </div>
+
+    <!-- PANTALLA DE EJERCICIO -->
+    <div class="exercise-screen" id="exercise-screen">
+        <div class="exercise-box">
+            <h2 class="exercise-title" id="exercise-title">Ejercicio</h2>
+            <p class="exercise-desc" id="exercise-desc">
+                Observa la seña y selecciona la respuesta correcta. (Placeholder para tus ejercicios reales).
+            </p>
+            <div class="exercise-content" id="exercise-content">
+                <button class="exercise-option">Opción A</button>
+                <button class="exercise-option">Opción B</button>
+                <button class="exercise-option">Opción C</button>
+            </div>
+            <button class="exercise-finish-btn" id="exercise-finish-btn">Terminar ejercicio</button>
+        </div>
+    </div>
+
+    <!-- SOLO UNA VEZ -->
+    <script type="module" src="niveles.js"></script>
+
+ <!-- BRUJITA GUÍA -->
+<div id="brujita">
+    <img src="gorrion.png" class="brujita-img" id="brujita-img">
+</div>
+
+<!-- PANEL DE DIÁLOGO -->
+<div id="brujita-panel" class="brujita-panel oculto-panel">
+    <p id="brujita-texto"></p>
+
+    <button id="brujita-continuar" style="display:none;">
+        Continuar
+    </button>
+</div>
+
+<!-- AUDIO -->
+<audio id="gorrion-voice" src="gorrion1frase1.mp3"></audio>
+<audio id="audio-felicitacion" src="gorrion1frase2.mp3"></audio>
+
+
+</body>
+</html>
